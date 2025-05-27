@@ -1,0 +1,23 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+/* four items */
+#four-items li:nth-last-child(1) {
+    grid-column: 2 / span 1;
+}
+
+
+/* five items */
+#five-items ul {
+    grid-template-columns: repeat(6, 1fr);
+}
+#five-items li {
+    grid-column: span 2;
+}
+#five-items li:nth-last-child(2) {
+    grid-column: 2 / span 2;
+}
