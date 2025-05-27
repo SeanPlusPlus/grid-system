@@ -1,0 +1,17 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+
+/* three items */
+#three-items ul {
+    grid-template-columns: repeat(12, 1fr);
+}
+#three-items li {
+    grid-column: span 6;
+}
+#three-items li:nth-last-child(1) {
+    grid-column: 4 / span 6;
+}
